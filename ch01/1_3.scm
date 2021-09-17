@@ -1,0 +1,8 @@
+(define (compare x y z)
+    (if (and (> x z) (> y z)) (+ x y)
+        (if (and (> z x) (> z x)) (+ y z)
+            (if (and (> z y) (> x y)) (+ z x))
+        )
+    )
+)
+(compare 1 2 3)
