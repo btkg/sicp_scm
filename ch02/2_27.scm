@@ -1,0 +1,5 @@
+(define x (list (list 1 2) (list 3 4)))
+(define (deep-reverse x)
+    (list (reverse (car (reverse x)))  (reverse (car (cdr (reverse x)))))
+)
+(deep-reverse x)
